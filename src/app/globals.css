@@ -1,5 +1,15 @@
 @import "tailwindcss";
-
+html {
+  scrollbar-gutter: stable;
+}
 body {
   @apply bg-white text-gray-900;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+.animate-float {
+  animation: float 2s ease-in-out infinite;
 }

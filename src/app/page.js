@@ -1,9 +1,16 @@
-import React from 'react'
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Features from "@/components/Features";
 
-function ProjectManagement() {
+export default function Home() {
   return (
-    <div>ProjectManagement</div>
-  )
-}
+    <>
+      <Header />
 
-export default ProjectManagement
+      <main className="pt-28">
+        <Hero />
+        <Features />
+      </main>
+    </>
+  );
+}
