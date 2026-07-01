@@ -1,10 +1,13 @@
 @import "tailwindcss";
+
 html {
   scrollbar-gutter: stable;
 }
+
 body {
   @apply bg-white text-gray-900;
 }
+
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-12px); }
@@ -12,4 +15,22 @@ body {
 
 .animate-float {
   animation: float 2s ease-in-out infinite;
+}
+
+@keyframes slide-in-left {
+  from { transform: translateX(24px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slide-in-right {
+  from { transform: translateX(-24px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.3s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.3s ease-out;
 }
