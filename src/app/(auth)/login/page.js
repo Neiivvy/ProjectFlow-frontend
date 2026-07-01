@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { login } from "@/api/auth";
 import useAuthStore from "@/store/authStore";
+import { useRouter } from "next/navigation";
 
 export default function LoginPage() {
   const {
@@ -13,6 +14,7 @@ export default function LoginPage() {
   } = useForm();
 
   const loginStore = useAuthStore((state) => state.login);
+  const router = useRouter();
 
 const onSubmit = async (data) => {
   try {
@@ -21,6 +23,7 @@ const onSubmit = async (data) => {
     loginStore(response.data);
 
     console.log(response.data);
+      router.push("/member");
   } catch (error) {
     console.log(error);
   }

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { signup } from "@/api/auth";
 import useAuthStore from "@/store/authStore";
+import { useRouter } from "next/navigation";
 
 
 export default function RegisterPage() {
@@ -14,12 +15,14 @@ export default function RegisterPage() {
   } = useForm();
 
   const registerStore = useAuthStore((state) => state.login);
+  const router = useRouter();
 
   const onSubmit = async (data) => {
   try {
     const response = await signup(data);
 
 registerStore(response.data);
+   router.push("/member");
   } catch (error) {
     console.log(error);
   }

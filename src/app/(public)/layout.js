@@ -1,13 +1,16 @@
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import React from "react";
+import Footer from "@/components/Footer";
 
-const PublicLayout = ({ children }) => {
+export default function PublicLayout({ children }) {
   return (
     <>
-      <div>{children}</div>
+      <Header />
+
+      <main className="flex-1">
+        {children}
+      </main>
+
+      <Footer />
     </>
   );
-};
-
-export default PublicLayout;
+}
