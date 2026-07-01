@@ -1,13 +1,13 @@
-import Header from '@/components/Header'
-import React from 'react'
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import React from "react";
 
-const PublicLayout = ({children}) => {
+const PublicLayout = ({ children }) => {
   return (
     <>
-    <Header />
-    <div>{children}</div>
+      <div>{children}</div>
     </>
- )
-}
+  );
+};
 
-export default PublicLayout
+export default PublicLayout;

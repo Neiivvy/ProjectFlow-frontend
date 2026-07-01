@@ -3,11 +3,17 @@ html {
   scrollbar-gutter: stable;
 }
 body {
-  @apply bg-white text-gray-900;
+  background-color: #ffffff;
+  color: #111827;
 }
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-12px); }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
 }
 
 .animate-float {

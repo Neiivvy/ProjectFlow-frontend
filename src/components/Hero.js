@@ -9,9 +9,8 @@ export default function Hero() {
         </h1>
 
         <p className="mt-6 text-lg text-[#404943] max-w-lg">
-          Manage projects, organize tasks, collaborate with your team,
-          monitor progress, and improve productivity through one centralized
-          platform.
+          Manage projects, organize tasks, collaborate with your team, monitor
+          progress, and improve productivity through one centralized platform.
         </p>
 
         <div className="mt-10 flex gap-4">
@@ -26,10 +25,10 @@ export default function Hero() {
       </div>
 
       <div className="rounded-2xl border border-[#bfc9c1] overflow-hidden shadow-2xl bg-white animate-float">
-      <Image
+        <Image
           src={Homepage}
           alt="Project management dashboard preview"
-          className="w-full h-auto object-cover"
+          className="w-full h-auto object-cover "
           width={600}
           height={400}
         />
