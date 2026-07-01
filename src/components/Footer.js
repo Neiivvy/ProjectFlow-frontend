@@ -26,41 +26,45 @@ const columns = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-slate-800 bg-gray-900 mt-20">
+    <footer className="border-t border-[#bfc9c1] bg-[#e0e3dd] mt-20">
       <div className="mx-auto max-w-7xl px-6 py-9 sm:px-10">
         <div className="grid grid-cols-2 gap-8 sm:grid-cols-6">
           {/* Brand */}
           <div className="col-span-2 sm:col-span-2">
             <div className="flex items-center gap-2">
-              <span className="flex h-8 w-8 items-center justify-center rounded-md bg-indigo-500/10">
-                <FaGithubSquare size={16} className="text-indigo-400" />
+              <span className="flex h-8 w-8 items-center justify-center rounded-md bg-[#0f5238]/10">
+                <FaGithubSquare size={16} className="text-[#0f5238]" />
               </span>
-              <span className="text-base font-semibold text-slate-100">
+              <span className="text-base font-semibold text-[#181d19]">
                 Project Clarity
               </span>
             </div>
-            <p className="mt-3 text-sm text-slate-400">
+
+            <p className="mt-3 text-sm text-[#404943]">
               Plan, track, and ship work — one workspace for the whole team.
             </p>
+
             <div className="mt-4 flex items-center gap-3">
               <a
                 href="#"
                 aria-label="GitHub"
-                className="text-slate-500 hover:text-slate-300"
+                className="text-[#404943] hover:text-[#0f5238] transition-colors"
               >
                 <FaGithub size={18} />
               </a>
+
               <a
                 href="#"
                 aria-label="Twitter"
-                className="text-slate-500 hover:text-slate-300"
+                className="text-[#404943] hover:text-[#0f5238] transition-colors"
               >
                 <FaTwitter size={18} />
               </a>
+
               <a
                 href="#"
                 aria-label="LinkedIn"
-                className="text-slate-500 hover:text-slate-300"
+                className="text-[#404943] hover:text-[#0f5238] transition-colors"
               >
                 <FaLinkedin size={18} />
               </a>
@@ -69,15 +73,16 @@ export default function Footer() {
 
           {columns.map((col) => (
             <div key={col.heading}>
-              <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-500">
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-[#181d19]">
                 {col.heading}
               </h3>
+
               <ul className="mt-3 space-y-2">
                 {col.links.map((link) => (
                   <li key={link}>
                     <a
                       href="#"
-                      className="text-sm text-slate-400 hover:text-indigo-400"
+                      className="text-sm text-[#404943] hover:text-[#0f5238] transition-colors"
                     >
                       {link}
                     </a>
@@ -88,8 +93,8 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-slate-800 pt-6 sm:flex-row">
-          <p className="text-xs text-slate-500">
+        <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-[#bfc9c1] pt-6 sm:flex-row">
+          <p className="text-xs text-[#404943]">
             © {new Date().getFullYear()} Project Clarity, Inc. All rights
             reserved.
           </p>
