@@ -28,7 +28,8 @@ export default function Hero() {
         <Image
           src={Homepage}
           alt="Project management dashboard preview"
-          className="w-full h-auto object-cover "
+            loading="eager"
+          className="w-full h-auto object-cover"
           width={600}
           height={400}
         />
