@@ -34,7 +34,7 @@ const ContactPage = () => {
                 id="name"
                 name="name"
                 placeholder="Enter Your Name"
-                className="px-3 py-2.5 text-sm text-slate-900 w-full rounded-md bg-white outline-1 -outline-offset-1 outline-slate-300 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-600"
+                className="px-3 py-2.5 text-sm text-slate-900 w-full rounded-md bg-white outline-1 -outline-offset-1 outline-slate-300 focus:outline-2 focus:-outline-offset-2 focus:outline-green-600"
               />
             </div>
             <div>
@@ -49,7 +49,7 @@ const ContactPage = () => {
                 id="email"
                 name="email"
                 placeholder="Your Email"
-                className="px-3 py-2.5 text-sm text-slate-900 w-full rounded-md bg-white outline-1 -outline-offset-1 outline-slate-300 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-600"
+                className="px-3 py-2.5 text-sm text-slate-900 w-full rounded-md bg-white outline-1 -outline-offset-1 outline-slate-300 focus:outline-2 focus:-outline-offset-2 focus:outline-green-600"
               />
             </div>
             <div>
@@ -64,7 +64,7 @@ const ContactPage = () => {
                 id="phone"
                 name="phone"
                 placeholder="+977 1234567890"
-                className="px-3 py-2.5 text-sm text-slate-900 w-full rounded-md bg-white outline-1 -outline-offset-1 outline-slate-300 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-600"
+                className="px-3 py-2.5 text-sm text-slate-900 w-full rounded-md bg-white outline-1 -outline-offset-1 outline-slate-300 focus:outline-2 focus:-outline-offset-2 focus:outline-green-600"
               />
             </div>
             <div>
@@ -80,13 +80,13 @@ const ContactPage = () => {
                 type="text"
                 id="message"
                 name="message"
-                className="px-3 py-2.5 text-sm text-slate-900 w-full rounded-md bg-white outline-1 -outline-offset-1 outline-slate-300 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-600"
+                className="px-3 py-2.5 text-sm text-slate-900 w-full rounded-md bg-white outline-1 -outline-offset-1 outline-slate-300 focus:outline-2 focus:-outline-offset-2 focus:outline-green-600"
                 defaultValue={""}
               />
             </div>
             <button
               type="submit"
-              className="w-full mt-2 py-2.5 px-4 text-sm rounded-md font-semibold cursor-pointer text-white border border-blue-600 bg-blue-600 hover:bg-blue-700 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+              className="w-full mt-2 py-2.5 px-4 text-sm rounded-md font-semibold cursor-pointer text-white border border-green-600 bg-green-600 hover:bg-green-700 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500"
             >
               Send message
             </button>
@@ -99,9 +99,9 @@ const ContactPage = () => {
             </h3>
             <div className="space-y-6">
               <div className="flex items-start space-x-3">
-                <FaLocationPin className="text-blue-700" />
+                <FaLocationPin className="text-green-700" />
                 <div>
-                  <h4 className="font-semibold text-blue-700 text-sm mb-2">
+                  <h4 className="font-semibold text-green-700 text-sm mb-2">
                     Our Location
                   </h4>
                   <p className="text-slate-600 text-sm">Prithvi Path</p>
@@ -111,18 +111,18 @@ const ContactPage = () => {
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <FaPhone className="text-blue-700" />
+                <FaPhone className="text-green-700" />
                 <div>
-                  <h4 className="font-semibold text-blue-700 text-sm mb-2">
+                  <h4 className="font-semibold text-green-700 text-sm mb-2">
                     Phone Number
                   </h4>
                   <p className="text-slate-600 text-sm">+977 1234567890</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <FaMailBulk className="text-blue-700" />
+                <FaMailBulk className="text-green-700" />
                 <div>
-                  <h4 className="font-semibold text-blue-700 text-sm mb-2">
+                  <h4 className="font-semibold text-green-700 text-sm mb-2">
                     Email Address
                   </h4>
                   <p className="text-slate-600 text-sm">contact@business.com</p>

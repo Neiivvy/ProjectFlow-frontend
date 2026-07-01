@@ -17,8 +17,8 @@ const stats = [
 const features = [
   {
     icon: FiBarChart2,
-    iconBg: "bg-blue-100",
-    iconColor: "text-blue-600",
+    iconBg: "bg-green-100",
+    iconColor: "text-green-600",
     title: "Project Dashboard",
     description:
       "Get a bird's-eye view of every project — timelines, task completion, team workload, and blockers in one place.",
@@ -43,8 +43,8 @@ const features = [
 const values = [
   {
     icon: FiTarget,
-    iconBg: "bg-blue-100",
-    iconColor: "text-blue-600",
+    iconBg: "bg-green-100",
+    iconColor: "text-green-600",
     title: "Stay On Track",
     description:
       "Plan tasks, track progress, and complete projects on time with ease.",
@@ -83,7 +83,7 @@ const team = [
   },
   {
     initials: "NI",
-    name: "Nikita Dangal",
+    name: "Nitika Dangal",
     role: "Frontend Developer",
   },
   {
@@ -107,17 +107,17 @@ export default function AboutPage() {
   return (
     <main>
       <section className="px-6 py-24 text-center sm:px-10">
-        <span className="inline-block rounded-full bg-blue-100 px-4 py-1.5 text-xl font-semibold text-blue-600">
+        <span className="inline-block rounded-full bg-green-100 px-4 py-1.5 text-xl font-semibold text-[#498f70]">
           About Us
         </span>
         <h1 className="mx-auto mt-6 max-w-3xl text-4xl font-extrabold leading-tight text-slate-900 sm:text-5xl">
-          The Smater Way to{" "}
-          <span className="text-blue-600">Manage Projects</span>
+          The Smarter Way to{" "}
+          <span className="text-[#498f70] ">Manage Projects</span>
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-500">
           Project Clarity is a project management system built for teams that
           can&apos;t afford to miss deadlines. We bring structure, visibility,
-          and accountability to every project — from kickoff to delivery.
+          and accountability to every project from kickoff to delivery.
         </p>
       </section>
 
@@ -129,7 +129,7 @@ export default function AboutPage() {
             </h2>
             <p className="mt-5 text-slate-500">
               Too many projects fail not because of bad ideas, but because of
-              poor coordination — missed handoffs, unclear ownership, and no
+              poor coordination missed handoffs, unclear ownership, and no
               single source of truth. Project Clarity fixes that by giving every
               team member a clear picture of what needs to happen and when.
             </p>
@@ -137,13 +137,13 @@ export default function AboutPage() {
               Founded in 2026, Project Clarity was built by project managers for
               project managers. Whether you&apos;re running a two-week sprint or
               a year-long enterprise rollout, our platform adapts to your
-              process — not the other way around.
+              process not the other way around.
             </p>
 
             <div className="mt-10 flex gap-10">
               {stats.map((stat) => (
                 <div key={stat.label}>
-                  <p className="text-3xl font-extrabold text-blue-600">
+                  <p className="text-3xl font-extrabold text-green-600">
                     {stat.value}
                   </p>
                   <p className="mt-1 text-sm text-slate-500">{stat.label}</p>
@@ -220,13 +220,13 @@ export default function AboutPage() {
         <div className="mt-14 grid grid-cols-1 gap-20 sm:grid-cols-3 lg:grid-cols-5">
           {team.map((member) => (
             <div key={member.name} className="text-center">
-              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-blue-600 text-lg font-bold text-white shadow-md shadow-blue-200">
+              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-[#498f70] text-lg font-bold text-white shadow-md shadow-green-200">
                 {member.initials}
               </div>
               <h3 className="mt-4 font-semibold text-slate-900">
                 {member.name}
               </h3>
-              <p className="mt-0.5 text-sm font-medium text-blue-600">
+              <p className="mt-0.5 text-sm font-medium text-green-600">
                 {member.role}
               </p>
               <p className="mx-auto mt-2 max-w-xs text-sm text-slate-500">

@@ -39,7 +39,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="py-20 bg-[#ecefe9] px-6">
+    <section className="py-20 bg-[#f8fafb] px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <span className="text-sm font-bold tracking-widest uppercase text-[#0f5238]">
